@@ -1,0 +1,35 @@
+img {/*Scales the plant photo correctly, 
+    and spaces it correctly*/
+    max-width: 80%;
+    height: auto;
+    padding-left: 5%;
+    padding-top: 5%
+}
+.container {/*Specifies which dividers use CSS Flexbox*/
+    display: flex;
+}
+
+.intro {/*Sets the plant information section to take up 80% of horizontal screen
+    heigh*/
+    height: 80vh;
+}
+.measure {/*Uses CSS Flexbox to center measurement content to fit viewbox*/
+    justify-content: space-between;
+}
+
+.data {/*Triples the font size relative to the original font size*/
+    font-size: 3em;
+}
+
+h1 {/*Switches data labels to use a Google Fonts*/
+    font-family: 'Roboto Mono', monospace;
+}
+
+p {/*Switches data labels to use a Google Fonts*/
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+p, .lbl {/*Sets label size to 150% of normal font size*/
+    font-size: 1.5em
+}
+

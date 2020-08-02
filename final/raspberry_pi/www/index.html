@@ -1,0 +1,62 @@
+<head>
+    <meta charset="UTF-8"><!--Defines character encoding for the webpage, set to default of UTF-8 used in Unicode-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Instructs browsers how to scale and size the webpage responsively-->
+    <link rel="stylesheet" type="text/css" href="plant.css"><!--Links to external CSS sheet-->
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Roboto+Mono" rel="stylesheet"><!--Loads two Google Fonts from their CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--Loads the latest jQuery library from Google's CDN-->
+    <script src="plant.js"></script><!--Links to locally stored JavaScript file, must come AFTER jQuery library-->
+</head>
+<body>
+    <div class="container intro"><!--Defines a container using CSS Flexbox and also attributes the intro class-->
+        <div><!--Defines another divider used to organise the webpage better-->
+            <img src="plant.jpg" alt="Square plant pot with succulent."><!--Embeds photo stored locally with alt text-->
+        </div><!--Closes first section for the plant photo-->
+        <div><!--Opens the second divider where the text is placed-->
+            <h1 class="robo">Aloe Vera</h1><!--Header title, 'robo' class defines new font from Google Fonts via CSS-->
+            <p>A. vera is considered to be native only to the south-west Arabian Peninsula. However, it has been widely cultivated 
+                around the world, and has become naturalized in North Africa, as well as Sudan and neighboring countries, along with 
+                the Canary Islands, Cape Verde, and Madeira Islands. It is also naturalized in wild areas across southern Spain, 
+                especially in the region of Murcia, being the only place in Europe where it has been found naturalized.
+                Aloe vera has been widely grown as an ornamental plant. The species is popular with modern gardeners as a putatively 
+                medicinal plant and for its interesting flowers, form, and succulence. This succulence enables the species 
+                to survive in areas of low natural rainfall, making it ideal for rockeries and other low water-use gardens.
+                The species is hardy, and is intolerant of heavy frost or snow.In pots, the species requires well-drained, 
+                sandy potting soil and bright, sunny conditions. Aloe plants can burn under too much sun or shrivel when the 
+                pot does not drain water. The use of a good-quality commercial propagation mix or packaged "cacti and succulent mix"
+                is recommended, as they allow good drainage. Terra cotta pots are preferable as they are porous. Potted plants should 
+                be allowed to completely dry before rewatering. When potted, aloes can become crowded with "pups" growing from the sides
+                 of the "mother plant".</p>
+            <p>Although there is little scientific evidence of the effectiveness or safety of Aloe vera extracts for either cosmetic
+                or medicinal purposes, the cosmetic and alternative medicine industries regularly make claims regarding the soothing,
+                moisturizing, and healing properties of aloe vera.here is no good evidence aloe vera is of use in treating wounds or burns.
+                Aloe vera gel is used commercially as an ingredient in yogurts, beverages, and some desserts, but at certain high doses, 
+                its toxic properties could be severe when taken orally.
+                </p>
+        </div><!--Closes second divider where Flex applies-->
+    </div><!--Closes Flex container-->
+    <div class="container measure" onload="dataRead()"><!--Second page section used to display measurements, 
+        hence the 'measure' class where Flex is also applied - when browser renders this divider the dataRead() function
+        is called from the external JS file-->
+        <div><!--Each measurement is within it's own divider to utilise Flex again-->
+            <label class="robo lbl">Temperature</label><br><!--Identifier for which measurement is being displayed-->
+            <label class="data robo" id="tempdata">21°C</label><br><!--Dynamic label with unique ID so JS function can
+                manipulate displayed content, placeholder numbers can be removed and 'robo' class used to change fonts-->
+            <label class="robo lbl" id="avgTemp"></label><!--Defines new label used for the mean temperature, also using same CSS modifications-->
+        </div><!--Closes the individual measurement sections to open the next-->
+        <div class="measuements">
+            <label class="robo lbl">Humidity</label><br>
+            <label class="data robo" id="humdata">53%</label><br>
+            <label class="robo lbl"id="avgHum"></label>
+        </div>
+        <div class="measuements">
+            <label class="robo lbl">Soil moisture</label><br>
+            <label class="data robo" id="moistdata">73%</label><br>
+            <label class="robo lbl" id="avgMoist"></label>
+        </div>
+        <div class="measuements">
+            <label class="robo lbl">Light</label><br>
+            <label class="data robo" id="luxdata">531 lux</label><br>
+            <label class="robo lbl" id="avgLux"></label>
+        </div>
+    </div>
+</body>
