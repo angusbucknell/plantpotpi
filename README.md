@@ -1,7 +1,7 @@
 # Plant Pot Pi
 A smart plant pot computer system for analysing, tracking, and reacting to abiotic stress factors affecting house plants.
 
-The project began as the coursework element of my OCR Computer Science A-level which I completed in 2019. I was awarded an A for my combined efforts in coursework as well as exams. I have published the project in the exact state it was submitted as for the non-examined assessment (NEA) within [this folder](nea). I've done this to give current CompSci A-level students some inspiration for their projects, and have included the written documentation piece as well.
+The project began as the coursework element of my OCR Computer Science A-level which I completed in 2019. I was awarded an A for my combined efforts in coursework as well as exams. I have published the project in the exact state it was submitted as for the non-examined assessment (NEA) within [this folder](nea). I've done this to give current CompSci A-level students some inspiration for their projects, the written documentation accompanying the project will be released soon.
 
 ## Getting started
 ### Prerequisites
